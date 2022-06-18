@@ -1,0 +1,520 @@
+
+:root{
+    --primary-color:linear-gradient(to right,#ff512f 0%,#dd2476 51%,#eb4b2b 100%);
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ebf2ff;
+    font-family: 'Merriweather', serif;
+}
+
+/* Navbar */
+.navbar{
+    background:#f9fafc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0px 12px;
+}
+
+.navbar__brand{
+    width:100px;
+}
+.navbar__logo{
+    width:100%
+}
+.navbar__item{
+    background-image:var(--primary-color);
+    color: #fff;
+    border: none;
+    padding:12px;
+    border-radius: 6px;
+    font-weight:300;
+}
+
+.navbar__item:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* Main section */
+
+
+.container{
+    padding:20px 15px;
+    width: 100%;
+
+}
+
+
+/* Hero container */
+.hero__image__container{
+    width: 100%;
+    
+}
+
+.hero__image{
+    width:100%;
+    border-radius: 8px;
+}
+
+.hero__description__container{
+    width:100%;
+    padding:20px 0px;
+}
+.hero__description__title{
+    width:100%;
+    font-size: 2rem;
+    color:#282c34
+
+}
+.hero__description__btn{
+    background-image: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding:12px;
+    border-radius: 6px;
+    font-weight:300;
+    margin-top: 10px;
+
+}
+
+/* Menu container */
+.menu__container{
+    position: relative;
+    max-width: 100%;
+    margin-top: 10px;
+    padding-top: 20px;
+}
+.menu__cards__bg{
+    position:absolute;
+    background-image:var(--primary-color);
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height:100%;
+    transform: skewY(-5deg);
+    z-index: -3;
+}
+
+.menu__header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+.menu__cards{
+    max-width: 100%;
+    padding: 10px;
+    
+}
+.menu__card{
+    
+    background:#fff;
+    max-width: 100%;
+    margin-top: 30px;
+    border-radius: 10px ;
+}
+.menu__card__image{
+    max-width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+.menu__card__discription{
+    padding:20px 20px;
+}
+.menu__card__title{
+    font-size: 1.5rem;
+}
+.menu__card__contant a{
+    color: red;
+    text-decoration: none;
+}
+.menu__buttons{
+    width:100%;
+    padding:1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu__button{
+    background-color: transparent;
+    color: #f9fafc;
+    font-size: 1.5rem;
+    font-weight: 600;
+    width:100%;
+    margin:0 1rem;
+    padding:1rem;
+    border:none;
+    border-radius: 10px;
+}
+.menu__button:hover{
+    background: #f9fafc;
+    color:#b54630;
+    width:60%;
+}
+
+/* Restaurant lists section */
+.restaurant__list__container{
+    width:100%;
+    margin: 2rem 0 1rem 0;
+}
+.restaurant__list__title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    width:100%;
+    margin:1rem 0;
+}
+.restaurant__list__images{
+    width:100%;
+    
+}
+.restaurant__images__raw__one,.restaurant__images__raw__two{
+    width:100%;
+    display:flex;
+    gap:5px;
+}
+.restaurant__images__raw__one{
+    align-items: baseline;
+    margin-bottom: 7px;
+}
+.restaurant__image__1,.restaurant__image__4{
+    width:100%;
+    height: 120%;
+}
+ .restaurant__image__2,.restaurant__image__3{ 
+    width:120%;
+    height: 250%;
+ }
+.restaurant__1,
+.restaurant__2,
+.restaurant__3,
+.restaurant__4{
+    width:100%;
+    height:100%;
+    border-radius: 6px;
+}
+
+/* Email section */
+.email__container{
+    width:100%;
+}
+.email__title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    width:100%;
+    padding:10px 0px;
+
+}
+.email__input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    gap: 6px;
+}
+.email{
+    padding:6px 5px;
+    border:1px solid red ;
+    border-radius: 5px;
+}
+.email__button{
+    padding:6px 5px;
+    color:#f9fafc;
+    background:var(--primary-color) ;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Quote section  */
+
+.quote__container{
+    width: 100%;
+    height:200px;
+    background:url(/assests/image/quote_bg.jpg);
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+    border-radius: 10px;
+}
+.quote__image{
+    width:100%;
+    height: 100%;
+    margin:30px 0px;
+    padding:40px 20px;
+    background: rgba(0, 0, 54, 0.398);
+}
+.quote__text{
+    color: #ffffff;
+    text-align: center;
+    width:100%;
+    padding:10px 30px;
+}
+/* Footer Section */
+.footer__container{
+    background:var(--primary-color);
+    width:100%;
+    border-radius: 20px 20px 0 0;
+}
+.footer__top{
+    display: flex;
+    width:100%
+}
+.footer__image{
+    filter:brightness(0%) invert(100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:1rem 1rem;
+    width:100%
+
+}
+.footer__logo{
+    width: 200px;
+}
+.footer__navigation{
+    margin:2rem 0rem;
+    width:50%;
+}
+.footer__navigation a{
+    text-decoration: none;
+    display:list-item;
+    list-style: none;
+    color:#fff;
+}
+.footer__bottom{
+    padding:10px 20px;
+    text-align: center;
+}
+/* for midium devices */
+
+@media (min-width:768px){
+    .navbar{
+        justify-content: space-between;
+        padding:0px 30px;
+    }
+    .container{
+        padding:20px 50px;
+    }
+    section{
+        margin:3rem 0;
+    }
+    .menu__cards{
+        max-width: 100%;
+        padding: 30px;
+        
+    }
+    .restaurant__list__title{
+        font-size: 2.5rem;
+    }
+    .quote__container{
+        height:350px;
+        font-size: 2rem;
+    }
+
+    .email__container{
+        margin:100px 10px;
+        padding:30px 0px;
+    }
+    .email__title{
+        font-size: 5rem;
+        margin:1rem 0rem;
+    }
+    .email__input{
+        padding:20px 15px;
+        gap:1rem;
+    }
+    .email{
+        font-size: 2rem;
+    }
+    .email__button{
+        font-size: 2rem;
+        padding:20px 10px;
+    }
+    .footer__image{
+        width: 100%;
+    }
+    .footer__logo{
+        width:300px;
+    }
+    .footer__navigation{
+        margin:3rem 0rem;
+        padding:0rem 3rem;
+    }
+    .footer__navigation a{
+        font-size: 2rem;
+    }
+
+}
+
+/* for large devices */
+
+@media(min-width:1080px){
+    .navbar{
+        padding:0px 100px;
+    }
+    .navbar__brand{
+        width:200px;
+    }
+    .navbar__item{
+        padding: 1.2rem 1.5rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    /* Container */
+    .container{
+        padding:50px 150px;
+        
+    }
+    section{
+        margin:5rem 0;
+    }
+    /* Hero container */
+    .hero__container{
+        display: flex;
+        flex-direction:row-reverse;
+        align-items: center;
+    }
+    .hero__description__title{
+        font-size: 4rem;
+    }
+    .hero__description__btn{
+        padding: 1.2rem 1.5rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-top: 15px;
+    }
+    /* Menu container */
+    .menu__container{
+        margin-top: 50px;
+    }
+    
+    .menu__header{
+        padding: 20px 20px;
+        font-size: 4rem;
+    }
+    .menu__cards{
+        display: flex;
+        justify-content: space-evenly;
+        padding:2rem 3rem;
+    }
+    .menu__card{
+        margin:2rem;
+    }
+    .menu__card__discription{
+        padding:30px 20px;
+    }
+    .menu__card__title{
+        font-size: 2.5rem;
+    }
+    .menu__card__contant{
+        padding:10px 0px;
+        font-size: 1.8rem;
+    }
+    #pizza__card{
+        margin-top: 0px;
+        margin-bottom: 60px;
+
+    }
+    .menu__buttons{
+        width:100%;
+        padding:1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu__button{
+        background-color: transparent;
+        color: #f9fafc;
+        font-size: 1.5rem;
+        font-weight: 600;
+        width:100%;
+        margin:0 1rem;
+        padding:1rem;
+        border:none;
+        border-radius: 10px;
+    }
+    .menu__button:hover{
+        background: #f9fafc;
+        color:#b54630;
+        width:60%;
+    }
+    /* Restaurant list section */
+    .restaurant__list__container{
+        display: flex;
+    }
+    .restaurant__list__title{
+        font-size: 5rem;
+    }
+.restaurant__images__raw__one,.restaurant__images__raw__two{
+    gap:12px;
+}
+.restaurant__images__raw__one{
+    margin-bottom: 8px;
+}
+/* Email section */
+
+.email__title{
+    font-size: 5rem;
+    margin:1rem 0rem;
+}
+.email__input{
+    padding:20px 15px;
+    gap:1rem;
+}
+.email{
+    font-size: 2rem;
+}
+.email__button{
+    font-size: 2rem;
+    padding:20px 20px;
+}
+
+/* Quote section */
+.quote__container{
+    height: 500px;
+}
+.quote__image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.quote__text{
+    text-align: center;
+    margin: 0 50px;
+}
+/* Footer Section */
+.footer__container{
+    padding:2rem 0rem;
+    margin:0px;
+    border-radius: 25px 25px 0px 0px;
+}
+.footer__top{
+    gap:2rem;
+    padding:0rem 3rem;
+}
+.footer__logo{
+    width: 400px;
+    
+}
+.footer__navigation{
+    padding-left: 2rem;
+}
+.footer__bottom{
+    padding:0 0;
+}
+.copy__rights{
+    font-size: 1rem;
+}
+}
